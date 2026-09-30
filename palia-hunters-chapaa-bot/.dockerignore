@@ -1,0 +1,11 @@
+.gradle
+build
+out
+.idea
+*.iml
+*.db
+*.db-shm
+*.db-wal
+.env
+.git
+.gitignore

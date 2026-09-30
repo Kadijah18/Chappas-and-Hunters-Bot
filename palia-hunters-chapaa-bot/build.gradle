@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'dev.palia'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('net.dv8tion:JDA:6.5.0') {
+        exclude module: 'opus-java'
+        exclude module: 'tink'
+    }
+    implementation 'org.xerial:sqlite-jdbc:3.50.3.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.20.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.17'
+}
+
+application {
+    mainClass = 'dev.palia.bot.PaliaBot'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
