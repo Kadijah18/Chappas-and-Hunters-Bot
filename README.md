@@ -15,7 +15,7 @@ A Java/JDA Discord bot for a 90-space Palia challenge race inspired by the in-ga
 - `/challenge`, `/position`, `/trail`, and `/leaderboard` show game progress.
 - `/reset` is restricted to members with Discord's **Manage Server** permission.
 - SQLite persists players, threads, completed spaces, proof submissions, screenshot metadata, and winners across restarts.
-- Railway deployment files are included so the bot can stay online without your computer running.
+- Railway deployment files are included so the bot can stay online without computer continuously running.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ A Java/JDA Discord bot for a 90-space Palia challenge race inspired by the in-ga
 - IntelliJ IDEA or Gradle
 - A Discord application/bot token
 - A Discord server where you can invite the bot
-- For 24/7 hosting: a Railway account (or another Docker-compatible host)
+- For 24/7 hosting: a Railway account (or another Docker-compatible host) I use Railway.
 
 The project currently uses JDA `6.5.0`.
 
